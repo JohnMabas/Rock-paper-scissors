@@ -5,25 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock paper scissors</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <p>Rock paper scissors</p>
+    <p class="title">Rock paper scissors</p>
 
     <button onclick="
     playerGame('rock');
-    ">Rock</button>
+    " class="move-button">
+    <img src="./img/emoji3.png" class="move-icon">
+
+    </button>
 
     <button onclick="
         playerGame('paper');
-    "> Paper</button>
+    " class="move-button"> 
+    <img src="./img/emoji1.jpeg" class="move-icon">
+
+    </button>
 
     <button onclick="
         playerGame('scissors');
-        ">scissors</button>
-    <p class="js-result"></p>
-    <p class="js-moves"></p>
-    <p class="js-score"></p>    
+        " class="move-button">
+        <img src="./img/emoji4.jpeg" class="move-icon">
+
+        </button>
+    <p class="js-result result">You Win</p>
+    <p class="js-moves">
+        You
+        <img src="./img/emoji3.png" class="move-icon">
+        <img src="./img/emoji1.jpeg" class="move-icon">
+        <img src="./img/emoji4.jpeg" class="move-icon">
+        Computer
+    </p>
+    <p class="js-score score"></p>    
 
     <button onclick="
     score.wins = 0;
@@ -31,7 +47,7 @@
     score.ties = 0;
     localStorage.removeItem('score');
     updateScoreElement();
-    ">Reset Score</button>
+    " class="reset-score-button">Reset Score</button>
 
 
     <script src="./script.js"></script>
