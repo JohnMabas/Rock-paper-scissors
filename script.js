@@ -73,7 +73,10 @@ function playerGame(playerMove) {
 
 function updateScoreElement() {
     document.querySelector('.js-score')
-    .innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
+    .innerHTML = `   You
+        <img src="./img/ ${playerGame} emoji3.png" class="move-icon">
+        <img src="./img/ ${pickComputerMove} emoji4.jpeg" class="move-icon">
+        Computer`;
 
 }
 
